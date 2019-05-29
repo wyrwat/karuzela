@@ -11,37 +11,24 @@
     </head>
     <body>
         <div class="main-carousel" data-flickity='{ "hash": true, "pageDots": false }'>
-            <div class="carousel-cell container cel1" id="carousel-cell1" style="background-image:url(https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
-                <h2>Ramen - Japan</h2>
-            </div>
-            <div class="carousel-cell container" id="carousel-cell2" style="background-image:url(https://images.pexels.com/photos/998246/pexels-photo-998246.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
-                <h2>Carbonara - Italy</h2>
-            </div>
-            <div class="carousel-cell container" id="carousel-cell3" style="background-image:url(https://images.pexels.com/photos/1191426/pexels-photo-1191426.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
-                <h2>Yakitori - Japan</h2>
-            </div>
-            <div class="carousel-cell container" id="carousel-cell4" style="background-image:url(https://images.pexels.com/photos/1881336/pexels-photo-1881336.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
-                <h2>Steak - USA</h2>
-            </div>
-            <div class="carousel-cell" id="carousel-cell1">
-                <div class="carousel-cell container" id="carousel-cell4" style="background-image:url(https://images.pexels.com/photos/1881336/pexels-photo-1881336.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)">
-                    <h2>Steak - Argentina</h2>
-                </div>
-            </div>
+            
         </div>
         <div class="button-group">
             <button class="restart button" data-selector=".cell1">
                 <i class="fas fa-fast-backward"></i>
             </button>
         </div>
+    
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
-    <script src="template-carousel" type="x-tmpl-mustache">
-        <div class="container">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script id="template-carousel" type="x-tmpl-mustache">
+        <div class="container carousel-cell">
             <h2> {{title}} </h2>
             {{ description }}
         </div>
     </script>
+
     <script>
         var carouselData = [
             {
