@@ -36,7 +36,12 @@
         </div>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
-    <script src="template-carousel" type="x-tmpl-mustache"></script>
+    <script src="template-carousel" type="x-tmpl-mustache">
+        <div class="container">
+            <h2> {{title}} </h2>
+            {{ description }}
+        </div>
+    </script>
     <script>
         var carouselData = [
             {
@@ -56,12 +61,12 @@
             },
             {
                 image:"src= //images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-                title:"stake",
+                title:"steak",
                 description: "<h2>Steak - USA</h2> <img src='//images.pexels.com/photos/1881336/pexels-photo-1881336.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'>"
             },
             {
                 image:"src= //images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-                title:"stake",
+                title:"steak",
                 description: "<h2>Steak - Argentina</h2> <img src='//images.pexels.com/photos/1881336/pexels-photo-1881336.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'>"
             }
         ]
