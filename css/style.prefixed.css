@@ -29,4 +29,10 @@
       align-items: center;
   cursor: pointer;
 }
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
