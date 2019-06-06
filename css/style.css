@@ -1,7 +1,10 @@
 .container {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 1200px;
   position: relative;
 }
@@ -20,8 +23,10 @@
   position: absolute;
   top: 20px;
   left: 20px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   cursor: pointer;
 }
 
@@ -31,5 +36,4 @@
   width: 100%;
   /* The width is the width of the web page */
 }
-
 /*# sourceMappingURL=style.css.map */
