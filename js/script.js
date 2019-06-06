@@ -4,17 +4,16 @@
   var results = document.querySelector(".main-carousel");
   var carouselTemplate = document.getElementById('template-carousel').innerHTML;
   Mustache.parse(carouselTemplate);
-  var carouselItems = " ";
+  var carouselItems = "";
 
-  for( var i = 0; i < carouselData.length; i++) {
-    var objectData = Object.assign(carouselData[i], {index: i+1});
+  for ( var i = 0; i < carouselData.length; i++) {
+    var objectData = Object.assign(carouselData[i], { index: i+1 });
     carouselItems += Mustache.render(carouselTemplate, objectData); 
   }
 
   var carouselList = Mustache.render(carouselItems);
   results.insertAdjacentHTML('beforeend', carouselList);
 })();
-
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
