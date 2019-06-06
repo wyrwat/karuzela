@@ -7,7 +7,7 @@
   var carouselItems = " ";
 
   for( var i = 0; i < carouselData.length; i++) {
-    var objectData = Object.assign(carouselData[i], {index: i+1});
+    var objectData = Object.assign(carouselData[i], { index: i+1 });
     carouselItems += Mustache.render(carouselTemplate, objectData); 
   }
 
