@@ -30,9 +30,7 @@
       progressBar.style.width = progress * 100 + '%';
     });
 
-    flkty.on('change', function( index ) {
-
-    });
+   
 
     var buttonGroup = document.querySelector('.button-group');
     var buttons = buttonGroup.querySelectorAll('.button');
